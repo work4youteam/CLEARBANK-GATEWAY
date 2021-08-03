@@ -21,7 +21,7 @@ public class ClearBankAccountDeleteController {
     @Autowired
     private ClearBankAccountDeleteService clearBankAccountDeleteService;
 
-    @RequestMapping(value = "/clearbank/gateway/accountdelete/{id}", method = RequestMethod.PUT)
+    @RequestMapping(value = "/clearbankgateway/accountdelete/{id}", method = RequestMethod.PUT)
     public ResponseEntity<?> clearBankAccountInactive(@PathVariable("id") String id, @RequestHeader Map<String, String> headersMap) throws UnsupportedEncodingException {
         String configToken=clearBankConfig.getInputsecuritytoken();
         System.out.println("configToken------------>"+configToken);

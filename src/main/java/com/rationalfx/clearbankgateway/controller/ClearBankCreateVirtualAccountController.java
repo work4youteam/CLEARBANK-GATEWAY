@@ -29,7 +29,7 @@ public class ClearBankCreateVirtualAccountController {
     @Autowired
     private ClearBankCreateVirtualAccountService clearBankCreateVirtualAccountService;
 
-    @PostMapping(value = "/clearbank/gateway/createvirtualaccount", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(value = "/clearbankgateway/createvirtualaccount", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
     ResponseEntity<Map<String, Object>> createVirtualAccount(@RequestBody JsonNode request, @RequestHeader Map<String, String> headersMap) {
 
 

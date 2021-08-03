@@ -22,7 +22,7 @@ public class ClearBankTransactionDetailsController {
     @Autowired
     private ClearBankTransactionDetailsService clearBankTransactionDetailsService;
 
-    @RequestMapping(value = "/clearbank/gateway/{transaction_id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/clearbankgateway/transaction/{transaction_id}", method = RequestMethod.GET)
     public ResponseEntity<Map<String, Object>> clearBankAccountDetails(@PathVariable("transaction_id") String transaction_id, @RequestHeader Map<String, String> headersMap) throws Exception {
         String configToken=clearBankConfig.getInputsecuritytoken();
         System.out.println("configToken------------>"+configToken);

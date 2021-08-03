@@ -21,7 +21,7 @@ public class ClearBankFundTransferController {
     @Autowired
     private ClearBankFundTransferService clearBankFundTransferService;
 
-    @RequestMapping(value = "/clearbank/gateway/fundtransfer", method = RequestMethod.POST)
+    @RequestMapping(value = "/clearbankgateway/fundtransfer", method = RequestMethod.POST)
     public ResponseEntity<Map<String, Object>> clearBankFundMoment(@RequestBody RequestClearBankFundTransfer requestClearBankFundTransfer, @RequestHeader Map<String, String> headersMap) {
         String configToken=clearBankConfig.getInputsecuritytoken();
         System.out.println("configToken------------>"+configToken);

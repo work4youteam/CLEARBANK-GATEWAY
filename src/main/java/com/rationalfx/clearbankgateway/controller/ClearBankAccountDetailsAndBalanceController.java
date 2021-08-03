@@ -20,7 +20,7 @@ public class ClearBankAccountDetailsAndBalanceController {
     @Autowired
     private ClearBankAccountDetailsAndBalanceService clearBankAccountDetailsAndBalanceService;
 
-    @RequestMapping(value = "/clearbank/gateway/accountdetails/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = "/clearbankgateway/accountdetails/{id}", method = RequestMethod.GET)
     public ResponseEntity<?> clearBankAccountInformation(@PathVariable("id") String id,@RequestHeader Map<String, String> headersMap) throws Exception {
         String configToken=clearBankConfig.getInputsecuritytoken();
         System.out.println("configToken------------>"+configToken);
